@@ -29,5 +29,9 @@
 #
 # You can require your own javascript files here. By default this will include everything in application, however you
 # may get better load performance if you require the specific files that are being used in the spec that tests them.
+#= require support/bind-poly
 #= require application
-#= angular-mocks/angular-mocks
+#= require angular-mocks/angular-mocks
+beforeEach ->
+  this.addMatchers
+    toEqualData: (expected)-> return angular.equals(this.actual, expected)
