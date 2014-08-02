@@ -43,8 +43,7 @@ group :test, :development do
   gem 'phantomjs'
 end
 
-gem 'teaspoon'
-gem 'phantomjs'
+
 
 
 
