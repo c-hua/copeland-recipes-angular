@@ -41,6 +41,9 @@ group :test, :development do
   gem "selenium-webdriver"
 end
 
+gem 'teaspoon'
+gem 'phantomjs'
+
 
 
 # Use ActiveModel has_secure_password
