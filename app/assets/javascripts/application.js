@@ -14,3 +14,16 @@
 //= require jquery_ujs
 //= require angular/angular
 //= require_tree .
+
+app.config([ '$routeProvider',
+  ($routeProvider)->
+    $routeProvider
+      .when('/',
+        templateUrl: "index.html"
+        controller: 'SomeController'
+      )
+      .when('/recipes/new',
+        templateUrl: "new.html"
+        controller: 'SomeOtherController'
+      )
+])
