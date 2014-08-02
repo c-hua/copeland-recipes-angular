@@ -23,6 +23,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0'
 
 gem 'bower-rails'
+gem 'angular-rails-templates'
 
 gem "foreman"
 group :production, :staging do
